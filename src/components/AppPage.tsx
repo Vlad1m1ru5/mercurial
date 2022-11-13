@@ -38,12 +38,13 @@ function AppPage({
       </Row>
       <Table
         loading={isFetching}
+        rowKey={({ id }) => id}
         dataSource={projects ? projects.data : []}
         pagination={{
-          current: page - 1,
+          current: page,
           pageSize: perPage,
           onChange: (page, pageSize) => {
-            setPage(page + 1);
+            setPage(page);
             setPerPage(pageSize);
           },
         }}
