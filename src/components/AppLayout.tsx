@@ -11,9 +11,7 @@ function AppLayout({ children, logo }: Props) {
   return (
     <Layout className="app-layout">
       <Layout.Header>{logo}</Layout.Header>
-      <Layout.Content className="app-layout__content">
-        {children}
-      </Layout.Content>
+      <Layout.Content className="app-layout-content">{children}</Layout.Content>
     </Layout>
   );
 }

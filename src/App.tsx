@@ -1,11 +1,12 @@
 import { ConfigProvider } from "antd";
+import "./App.css";
 import reactLogo from "./assets/react.svg";
 import AppLayout from "./components/AppLayout";
 import AppPage from "./components/AppPage";
 
 function App() {
   return (
-    <ConfigProvider>
+    <ConfigProvider componentSize="large">
       <AppLayout logo={<img src={reactLogo} alt="React Logo" />}>
         <AppPage
           onClickProjectCreate={() => {}}

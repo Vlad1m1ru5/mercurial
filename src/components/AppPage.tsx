@@ -1,4 +1,3 @@
-import { EditOutlined } from "@ant-design/icons";
 import { Button, Col, Input, Row, Space, Table } from "antd";
 import { useState } from "react";
 import { useListQueriedProjectsQuery } from "../services/projects";
@@ -68,8 +67,8 @@ function AppPage({
             width: "0",
             render: (_: unknown, { id }) => (
               <Button
-                type="ghost"
-                icon={<EditOutlined />}
+                type="link"
+                size="small"
                 onClick={() => onClickProjectEdit(id)}
               >
                 Edit
